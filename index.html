@@ -15,7 +15,7 @@
     <section class="container-fluid">
       <section class="row">
         <section class="col-12 col-sm col-sm-6 col-md-3 offset-sm-4">
-          <form autocomplete="off" class="justify-content-center form-container d-flex align-items-center flex-column h-100" novalidate>
+          <form readonly onfocus="$(this).removeAttr('readonly');" class="justify-content-center form-container d-flex align-items-center flex-column h-100" novalidate>
             <h3 class="form-title text-center">Faça seu cadastro</h3>
               <div class="form-group">
                 <input autocomplete="off" id="fieldName" onfocusout="validateName()" type="text" class="form-control"  aria-describedby="namelHelp" placeholder="nome">
